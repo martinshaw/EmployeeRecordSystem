@@ -29,6 +29,21 @@ import org.json.JSONArray;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/**
+ * MainActivity.java
+ * ----------------
+ * Starting point of the Android Java Application.
+ *
+ * Renders Layout view for manipulation by this code base,
+ * then requests a list of basic Employee data from the server,
+ * then passes this data into a ListViewAdaptor which displays
+ * the records in a pressable list, then sets an event listener to
+ * inflate the DetailActivity for displaying further in-depth Employee
+ * information, on press of button.
+ *
+ * @author martin
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     public final static String EMPLOYEE_ID = "EMPLOYEE_ID"; // for use with MainActivity to DetailActivity Intent
@@ -85,13 +100,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void jsonStringToEmployees(String jsonString){
-
-
-
-    }
-
-
+    // Basic test for whether the device is connected to ther internet
     public boolean isConnected(){
         ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Activity.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();

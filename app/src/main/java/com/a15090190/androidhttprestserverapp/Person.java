@@ -1,4 +1,15 @@
 package com.a15090190.androidhttprestserverapp;
+
+/**
+ * Person.java
+ * -----------------------------
+ * Very basic class which describes how data of
+ * Persons should be stored and accessed.
+ *
+ * @author martin
+ *
+ */
+
 public class Person {
 
 	String name;

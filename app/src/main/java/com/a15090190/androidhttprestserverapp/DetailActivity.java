@@ -11,6 +11,19 @@ import android.widget.TextView;
 
 import com.a15090190.androidhttprestserverapp.RESTAPIFunctions.FunctionsDAO;
 
+/**
+ * DetailActivity.java
+ * ----------------
+ * Layout view which displays further information to the user on request.
+ *
+ * Renders Layout view for manipulation by this code base,
+ * then requests further in-depth details of an Employee as
+ * specified by the ID number stored in the Intent used to
+ * trigger this class.
+ *
+ * @author martin
+ */
+
 public class DetailActivity extends AppCompatActivity {
     FunctionsDAO dao = new FunctionsDAO();
 
@@ -27,9 +40,13 @@ public class DetailActivity extends AppCompatActivity {
             }
         });
 
+        // Get stored ID number for use when getting
+        // Employee data from the database.
         Intent intent = getIntent();
         int intent_id = intent.getIntExtra(MainActivity.EMPLOYEE_ID, -1);
 
+        // Store references to visual elements in the Layout
+        // View for displaying text values.
         TextView id = (TextView) findViewById(R.id.id);
         TextView name = (TextView) findViewById(R.id.name);
         TextView gender = (TextView) findViewById(R.id.gender);

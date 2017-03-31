@@ -16,8 +16,14 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+
 /**
- * Created by martin on 30/01/2017.
+ * EmployeesListAdaptor.java
+ * ----------------
+ * Extends ArrayAdapter so as to facilitate a ListView with
+ * two custom-styled TextViews.
+ *
+ * @author martin
  */
 
 public class EmployeesListAdaptor extends ArrayAdapter<Employee> {

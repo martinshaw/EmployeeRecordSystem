@@ -1,4 +1,16 @@
 package com.a15090190.androidhttprestserverapp;
+
+/**
+ * Employee.java
+ * -----------------------------
+ * Very basic class which further extends the Person.java class
+ * in describing how data of Employees should be stored and
+ * accessed.
+ *
+ * @author martin
+ *
+ */
+
 public class Employee extends Person {
 
 	int id;
